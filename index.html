@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-pastel-nav sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Ann Sherinel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mission-vision">Mission & Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero-section py-5 text-center">
+    <div class="container py-4">
+      <div class="alert alert-light border-0 shadow-sm d-inline-block px-4 py-2 mb-4" role="alert">
+        WELCOME!
+      </div>
+      
+      <h1 class="display-4 fw-bold mb-3">Hello, I'm <span class="text-decoration-underline">Ann</span></h1>
+      <p class="lead mb-4 text-secondary">Information Technology Student</p>
+      
+      <a href="#contact" class="btn btn-pastel btn-lg px-4 me-2">Get in Touch</a>
+      
+      <button type="button" class="btn btn-outline-dark btn-lg px-4" data-bs-toggle="modal" data-bs-target="#resumeModal">
+        Quick Bio
+      </button>
+    </div>
+  </section>
+
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-pastel-pink">
+          <h5 class="modal-title" id="resumeModalLabel">Quick Highlights</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Currently pursuing a Bachelor of Science in Information Technology at the University of Cabuyao (PNC). I love front-end design, UI/UX, and building creative things for the web. Always learning, always building!.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">About Me</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <div class="card card-pastel">
+            <img src="image/cd735bec-4792-4471-8133-28aaac684d28 copy.jpg" class="card-img-top" alt="Profile Picture">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Ann Sherinel</h5>
+              <p class="card-text">BS Information Technology — 2nd Year Student at University of Cabuyao.</p>
+              
+              <span class="badge bg-pastel-pink me-1">HTML5</span>
+              <span class="badge bg-pastel-green me-1">CSS3</span>
+              <span class="badge bg-pastel-pink me-1">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-7">
+          <h4 class="fw-bold mb-3">Technical Skills</h4>
+          
+          <p class="mb-1">HTML5 / Web Semantics</p>
+          <div class="progress mb-3" style="height: 20px;">
+            <div class="progress-bar bg-pastel-green" role="progressbar" style="width: 90%;">90%</div>
+          </div>
+
+          <p class="mb-1">CSS3 & UI Styling</p>
+          <div class="progress mb-3" style="height: 20px;">
+            <div class="progress-bar bg-pastel-pink" role="progressbar" style="width: 85%;">85%</div>
+          </div>
+
+          <p class="mb-1">Bootstrap Framework</p>
+          <div class="progress mb-4" style="height: 20px;">
+            <div class="progress-bar bg-pastel-green" role="progressbar" style="width: 80%;">80%</div>
+          </div>
+
+          <div class="p-3 rounded bg-light border border-pastel-pink">
+            <h5 class="fw-bold">Educational Background</h5>
+            <ul class="mb-0">
+              <li><strong>Tertiary:</strong> University of Cabuyao (PNC) — BSIT (Present)</li>
+              <li><strong>Secondary:</strong> Janosa National High School (STEM)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">Photo Gallery</h2>
+      <p class="text-center text-secondary mb-4">Six Moments and Highlights</p>
+      
+      <div id="portfolioCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active">
+            <img src="image/Ming1.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="image/Ming2.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="image/Ming3.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4 col-sm-6">
+          <img src="image/Picture1.jpg" class="img-fluid gallery-img w-100 shadow-sm" alt="Gallery 1">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="image/Picture2.jpg" class="img-fluid gallery-img w-100 shadow-sm" alt="Gallery 2">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="image/Picture3.jpg" class="img-fluid gallery-img w-100 shadow-sm" alt="Gallery 3">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="image/Picture4.jpg" class="img-fluid gallery-img w-100 shadow-sm" alt="Gallery 4">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="image/Picture5.jpg" class="img-fluid gallery-img w-100 shadow-sm" alt="Gallery 5">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="image/Picture6.jpg" class="img-fluid gallery-img w-100 shadow-sm" alt="Gallery 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission-vision" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">University of Cabuyao (PNC)</h2>
+      
+      <div class="accordion shadow-sm" id="pncAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMission">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMission">
+              Mission
+            </button>
+          </h2>
+          <div id="collapseMission" class="accordion-collapse collapse show" data-bs-parent="#pncAccordion">
+            <div class="accordion-body">
+                As an institution of higher learning, University of Cabuyao is committed to equip individuals with knowledge, skills and values that will enable them to achieve their professional goals and provide leadership and service for national development.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVision">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVision">
+              Vision
+            </button>
+          </h2>
+          <div id="collapseVision" class="accordion-collapse collapse" data-bs-parent="#pncAccordion">
+            <div class="accordion-body">
+              A premier institution of higher learning in Region IV, developing globally-competitive and value-laden professionals and leaders instrumental to community development and nation-building.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form class="p-4 bg-white rounded shadow-sm border border-pastel-pink">
+            <div class="mb-3">
+              <label for="fullName" class="form-label font-weight-bold">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your complete name" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="emailAddr" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailAddr" placeholder="name@example.com" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <select class="form-select" id="subject">
+                <option selected>Select inquiry type...</option>
+                <option value="1">Project Collaboration</option>
+                <option value="2">General Question</option>
+                <option value="3">Other</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-pastel w-100 py-2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-3 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Ann Sherinel Diwata — University of Cabuyao (PNC). All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
